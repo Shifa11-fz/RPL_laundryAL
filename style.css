@@ -1,0 +1,66 @@
+/* Logo dan link di tengah */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav-logo {
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fafbfc;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #81d4fa;
+  color: #003f6b;
+}
+
+/* Background gradasi halaman */
+body.home-bg {
+  background: linear-gradient(to bottom, #7da7e5, #f3eae0);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #b3e5fc;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Konten di bawah navbar */
+.home-container {
+  text-align: center;
+  padding: 200px 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 130px;
+  margin-top: 20px;
+  background-color: #81d4fa;
+  color: #003f6b;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4fc3f7;
+}
+
