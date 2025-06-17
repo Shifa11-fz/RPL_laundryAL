@@ -1,0 +1,149 @@
+/* === 1) BODY & LAYOUT UTAMA === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Container form */
+  .form-container {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efek sedikit membesar saat hover ke seluruh container */
+  .form-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Judul form */
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  /* === 2) FORM GROUP & LABEL === */
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  /* Label di atas setiap input */
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555555;
+    font-size: 14px;
+  }
+  
+  /* Input text & number */
+  .form-group input[type="text"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #333333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Outline biru lembut saat input sedang fokus */
+  .form-group input[type="text"]:focus,
+  .form-group input[type="number"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+  }
+  
+  /* Placeholder berwarna lebih redup */
+  .form-group input::placeholder {
+    color: #999999;
+  }
+  
+  /* === 3) TOMBOL SUBMIT === */
+  /* Tombol umum */
+  /* Tombol Umum */
+.btn {
+    padding: 12px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 48%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Tombol Update - Biru */
+  .btn-update {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .btn-update:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+  }
+  
+  /* Tombol Batal - Merah */
+  .btn-cancel {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .btn-cancel:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+  
+  /* Container Tombol */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  
+  
+  /* === 4) RESPONSIVE (opsional) === */
+  @media screen and (max-width: 500px) {
+    .form-container {
+      padding: 20px 18px;
+    }
+  
+    .form-container h2 {
+      font-size: 20px;
+    }
+  
+    .form-group label {
+      font-size: 13px;
+    }
+  
+    .form-group input[type="text"],
+    .form-group input[type="number"] {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 15px;
+      padding: 10px 0;
+    }
+  }
+  

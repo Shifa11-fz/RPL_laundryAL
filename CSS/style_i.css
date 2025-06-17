@@ -1,0 +1,166 @@
+body.home-bg {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(199, 225, 243) 80%
+    ),
+    url("../Foto/bg2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 180px 20px 60px; 
+  text-align: center;
+}
+
+
+.logo {
+  max-width: 700px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.home-buttons .btn {
+  display: inline-block;
+  padding: 12px 40px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #003f6b;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 62, 107, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+.home-buttons .btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 62, 107, 0.3);
+}
+
+
+.judul-paket {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #081f5c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.paket-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.card .nama-paket {
+  background: linear-gradient(120deg, #24a1db, #81d4fa);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 16px 0;
+}
+
+
+.layanan-list {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+
+.layanan-list::-webkit-scrollbar {
+  width: 6px;
+}
+.layanan-list::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+.layanan-list::-webkit-scrollbar-thumb {
+  background-color: #81d4fa;
+  border-radius: 3px;
+}
+
+
+.layanan-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #444;
+  transition: background-color 0.2s ease;
+}
+.layanan-item:last-child {
+  border-bottom: none;
+}
+.layanan-item:hover {
+  background-color: #f9f9f9;
+}
+
+
+.layanan-item .jenis {
+  flex: 1;
+  text-align: left;
+  font-weight: 500;
+}
+
+.layanan-item .harga {
+  flex-shrink: 0;
+  text-align: right;
+  font-weight: 600;
+  color: #28a745;
+}
+
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 150px 20px 40px;
+  }
+  .card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-container {
+    padding: 120px 10px 30px;
+  }
+  .judul-paket {
+    font-size: 24px;
+  }
+  .home-buttons .btn {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+}
